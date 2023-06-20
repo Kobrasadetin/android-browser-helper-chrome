@@ -144,7 +144,7 @@ public class TwaProviderPicker {
         if (customTabsServices.containsKey(chromePackageName)) {
             @LaunchMode int launchMode = customTabsServices.get(chromePackageName);
             if (launchMode == LaunchMode.TRUSTED_WEB_ACTIVITY || launchMode == LaunchMode.CUSTOM_TAB) {
-                Log.d(TAG, "Found Chrome, finishing search: " + providerName);
+                Log.d(TAG, "Found Chrome, finishing search: " + chromePackageName);
                 return new Action(launchMode, chromePackageName);
             }
         }
