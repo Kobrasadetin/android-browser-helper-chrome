@@ -90,7 +90,7 @@ public class TwaLauncher {
     private TwaCustomTabsServiceConnection mServiceConnection;
 
     @Nullable
-    private CustomTabsSession mSession;
+    public CustomTabsSession mSession;
 
     private TokenStore mTokenStore;
 
